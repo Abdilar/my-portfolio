@@ -7,8 +7,11 @@ const AppRouting = () => (
   <BrowserRouter>
     <Header />
     <Switch>
-        <Route path={'/'} component={Pages.HomePage} exact />
-        <Route component={Pages.NotFoundPage} />
+       <Route path={'/'} component={Pages.HomePage} exact />
+       <Route path={'/portfolio'} component={Pages.PortfolioPage} exact />
+       <Route path={'/portfolio/:id'} component={Pages.PortfolioDetailPage} />
+       <Route path={'/contact'} component={Pages.ContactPage} />
+       <Route component={Pages.NotFoundPage} />
     </Switch>
   </BrowserRouter>
 );
