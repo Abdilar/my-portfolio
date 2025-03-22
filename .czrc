@@ -1,0 +1,8 @@
+{
+  "path": "cz-conventional-changelog",
+  "maxHeaderWidth": 100,
+  "maxLineWidth": 100,
+  "defaultType": "feat",
+  "allowCustomScopes": false,
+  "disableScopeLowerCase": true
+}
