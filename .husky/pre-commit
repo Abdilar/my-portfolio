@@ -1,1 +1,2 @@
-echo "husky is running..."
+echo '[Husky] 🏗️👷 Styling your project before committing👷‍♂️🏗️'
+echo '[Husky] please be patient, this may take a while...'
