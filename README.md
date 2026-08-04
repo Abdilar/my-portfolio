@@ -1,36 +1,160 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Frontend Engineering Portfolio
 
-First, run the development server:
+My professional portfolio as a Senior Frontend Engineer, built with Next.js and TypeScript.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The website presents selected projects, production engineering experience, and technical case studies covering frontend architecture, performance optimization, testing, and engineering leadership.
+
+## Live Website
+
+[View the portfolio](YOUR_DEPLOYMENT_URL)
+
+## Purpose
+
+This project is designed to provide more technical depth than a traditional personal portfolio.
+
+Instead of presenting only screenshots and technology lists, each case study explains:
+
+- The product and engineering context
+- The technical problem
+- Constraints and trade-offs
+- The solution and architecture
+- My responsibilities
+- The measurable or observable result
+- Lessons and possible improvements
+
+## Featured Case Studies
+
+### High-Traffic E-commerce Performance
+
+A case study about reducing redundant API requests through client-side caching and improving frontend performance in a product serving more than one million monthly users.
+
+### Frontend Monorepo Architecture
+
+A case study covering the design of a Webpack-based frontend monorepo used across multiple banking applications.
+
+### Frontend Testing Strategy
+
+A case study explaining how unit, integration, and end-to-end testing practices can be introduced into an existing frontend codebase without significantly slowing delivery.
+
+### Engineering Leadership
+
+A case study about technical decision-making, mentoring, onboarding documentation, code reviews, and improving team engineering practices.
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS Modules or Tailwind CSS
+- Jest
+- React Testing Library
+- Playwright
+- Vercel
+- GitHub Actions
+
+## Architecture
+
+```Text
+src/
+├── app/
+├── components/
+│   ├── ui/
+│   └── sections/
+├── features/
+│   ├── case-studies/
+│   ├── projects/
+│   └── contact/
+├── content/
+│   ├── case-studies/
+│   └── projects/
+├── lib/
+├── styles/
+└── tests/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Content should be separated from presentation components so that case studies can be maintained without modifying UI code.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Performance Goals
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* Lighthouse Performance score above 95
+* Accessibility score above 95
+* Minimal client-side JavaScript
+* Optimized fonts and images
+* Static generation for project and case-study pages
+* No unnecessary third-party scripts
 
-## Learn More
+## Accessibility
 
-To learn more about Next.js, take a look at the following resources:
+The website should include:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* Semantic HTML
+* Keyboard navigation
+* Visible focus styles
+* Accessible form labels
+* Sufficient color contrast
+* Reduced-motion support
+* Automated accessibility checks
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Testing
 
-## Deploy on Vercel
+### Unit and Integration Tests
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Navigation
+* Project filtering
+* Case-study rendering
+* Contact form validation
+* Content parsing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### End-to-End Tests
+
+* Browse projects
+* Open a case study
+* Download the resume
+* Submit the contact form
+* Navigate using the keyboard
+
+## Local Development
+
+```bash
+git clone https://github.com/Abdilar/frontend-engineering-portfolio.git
+cd frontend-engineering-portfolio
+npm install
+npm run dev
+```
+
+## Quality Checks
+
+```bash
+npm run typecheck
+npm run lint
+npm test
+npm run test:e2e
+npm run build
+```
+
+## Deployment
+
+The project is deployed on Vercel.
+
+Each pull request should receive a preview deployment, while merges to the main branch should trigger the production deployment.
+
+## Roadmap
+
+* [ ] Complete professional homepage
+* [ ] Add selected experience
+* [ ] Add four technical case studies
+* [ ] Add project detail pages
+* [ ] Add downloadable resume
+* [ ] Add accessibility tests
+* [ ] Add Playwright tests
+* [ ] Add Lighthouse CI
+* [ ] Add analytics without invasive tracking
+* [ ] Deploy production version
+
+## License
+
+The source code is available under the MIT License.
+
+The written case-study content and personal information may not be reused without permission.
+
